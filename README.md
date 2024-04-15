@@ -20,5 +20,8 @@ mvn spring-boot:run
 Abra outra janela do terminal e execute:
 
 ```shell
-curl localhost:8080/phone-call/categorize
+curl --request POST \
+  --url http://localhost:8080/phone-call/categorize \
+  --header 'Content-Type: text/plain; charset=utf-8' \
+  --data 'Bom dia, meu nome é Fulano. Não estou conseguindo acessar o app do meu banco. Quando tento entrar aparece a mensagem "senha inválida". Também quero saber como conseguir um empréstimo.'
 ```
