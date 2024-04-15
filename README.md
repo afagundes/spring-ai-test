@@ -25,3 +25,16 @@ curl --request POST \
   --header 'Content-Type: text/plain; charset=utf-8' \
   --data 'Bom dia, meu nome é Fulano. Não estou conseguindo acessar o app do meu banco. Quando tento entrar aparece a mensagem "senha inválida". Também quero saber como conseguir um empréstimo.'
 ```
+
+Você deverá receber uma resposta no seguinte formato:
+
+```json
+{
+  "title": "Problemas de acesso ao aplicativo e solicitação de empréstimo",
+  "category": [
+    "Acesso ao aplicativo",
+    "Senha inválida",
+    "Empréstimo"
+  ]
+}
+```
